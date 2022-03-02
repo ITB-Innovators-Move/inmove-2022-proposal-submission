@@ -71,5 +71,30 @@
     <script src="javascript/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyAYWQUIWUNCCpp5ZyIZM8EC9jbFnE9LobM",
+        authDomain: "proposal-submission.firebaseapp.com",
+        databaseURL: "https://proposal-submission-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "proposal-submission",
+        storageBucket: "proposal-submission.appspot.com",
+        messagingSenderId: "578856232163",
+        appId: "1:578856232163:web:1eac5ba7070862d9d251d6",
+        measurementId: "G-2HM5J77QXY"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
     </body>
 </html>
