@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="icon" href="image/logo.png" />
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <div class="header-right">
+                <a href="https://itbinmove.com/">ITB Innovators Move</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="top-wrapper">
+        <div class="container">
+            <h1>Proposal Submission Form</h1>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="form-container">
+            <!-- link form : https://docs.google.com/forms/d/1ET6qOUl9RG75ipluubUifrZFJOXECRyNL0IL7m9OPnQ/edit?usp=sharing -->
+            <form id="registration" onsubmit="return postToGoogle();">
+                <fieldset>
+                    <legend>Identitas Tim</legend>
+
+                    <label for="NamaTim"> Nama Tim </label>
+                    <label for="NamaTim" class="isrequired"> *required </label>
+                    <input placeholder="Masukkan nama tim" type="text" name="entry.506117415" data-name="Nama" id="NamaTim" required>
+
+                    <label for="NamaKetua"> Nama Ketua </label>
+                    <label for="NamaKetua" class="isrequired"> *required </label>
+                    <input placeholder="Masukkan nama ketua" type="text" name="entry.478693612" data-name="Nama" id="NamaKetua" required>
+
+                    <label for="NoTelpKetua"> No. Telp Ketua </label>
+                    <label for="NoTelpKetua" class="isrequired"> *required </label>
+                    <input placeholder="Masukkan no. telp ketua" type="number" name="entry.244960704" data-name="NomorTelepon" id="NoTelpKetua" required>
+
+                    <label for="IDLineKetua"> ID Line Ketua </label>
+                    <label for="IDLineKetua" class="isrequired"> *required </label>
+                    <input placeholder="Masukkan ID Line ketua" type="text" name="entry.2006212466" data-name="ID" id="IDLineKetua" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Link Google Drive</legend>
+
+                    <label for="LinkGoogleDrive">
+                        Link Google Drive yang berisi file pdf proposal dari Business Plan Competitions atau Innovation Competitions.
+                    </label>
+                    <label for="LinkGoogleDrive" class="notes">
+                        Jangan lupa visibility dari link tersebut diubah menjadi "Anyone with the link".
+                    </label>
+                    <label for="NoTelpKetua" class="isrequired"> *required </label>
+                    <input placeholder="Masukkan link Google Drive" type="url" name="entry.101853910" data-name="Link" id="LinkGoogleDrive" required>
+                </fieldset>
+
+                <button type="submit" id="contact-submit" class="submit-button">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </body>
+</html>
